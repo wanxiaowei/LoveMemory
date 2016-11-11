@@ -149,14 +149,14 @@ function timeElapse(date, mode){
 	
 	var result = "";
 	if (mode == 1) {
-		result = (years > 0 ? "<span class=\"digit\">" + years + "</span> year ":"")
-			+ (months >= 0 ? "<span class=\"digit\">" + months + "</span> month ":"")
-			+ "<span class=\"digit\">" + days + "</span> day "
-			+ "<span class=\"digit\">" + hours + "</span> hr "
-			+ "<span class=\"digit\">" + minutes + "</span> min "
-			+ "<span class=\"digit\">" + seconds + "</span> sec";
+		result = (years > 0 ? "<span class=\"digit\">" + "5" + "</span> year ":"")
+			+ (months >= 0 ? "<span class=\"digit\">" + "4" + "</span> month ":"")
+			+ "<span class=\"digit\">" + "9" + "</span> day "
+			+ "<span class=\"digit\">" + "05" + "</span> hr "
+			+ "<span class=\"digit\">" + "12" + "</span> min "
+			+ "<span class=\"digit\">" + "21" + "</span> sec";
 	} else {
-		result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds";
+		result = "<span class=\"digit\">" + "1959" + "</span> days <span class=\"digit\">" + "05" + "</span> hours <span class=\"digit\">" + "12" + "</span> minutes <span class=\"digit\">" + "21" + "</span> seconds";
 	}
 	
 	$("#elapseClock").html(result);
